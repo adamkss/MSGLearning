@@ -12,7 +12,7 @@ import javax.persistence.Persistence;
 
 public class MainClass {
     public static void main(String[] args) {
-        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("org.hibernate.tutorial.jpa");
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("example6");
 
         Address address1 = new Address();
         address1.setCity("Salonta");

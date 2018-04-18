@@ -11,7 +11,7 @@ import javax.persistence.Persistence;
 
 public class MainClass {
     public static void main(String[] args) {
-        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("org.hibernate.tutorial.jpa");
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("example3");
 
         Department contabilitate = new Department();
         contabilitate.setName("contabilitate");
