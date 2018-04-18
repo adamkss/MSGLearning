@@ -1,4 +1,4 @@
-package JPALearning.Example3.Models;
+package JPALearning.Example2.Models;
 
 import javax.persistence.*;
 
@@ -13,7 +13,6 @@ public class Employee {
 
     @ManyToOne
     private Department department;
-
 
     public Department getDepartment() {
         return department;
@@ -38,4 +37,6 @@ public class Employee {
     public void setNume(String nume) {
         this.nume = nume;
     }
+
+
 }

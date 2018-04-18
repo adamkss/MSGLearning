@@ -6,6 +6,7 @@ import java.sql.*;
 import java.util.Arrays;
 import java.util.Scanner;
 
+
 public class JDBCLearningClass {
     Scanner consoleIn = new Scanner(System.in);
     Connection connection;

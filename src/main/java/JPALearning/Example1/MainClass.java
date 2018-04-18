@@ -1,7 +1,7 @@
-package JPALearning;
+package JPALearning.Example1;
 
-import JPALearning.Models.Bank;
-import JPALearning.Models.Client;
+import JPALearning.Example1.Models.Bank;
+import JPALearning.Example1.Models.Client;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

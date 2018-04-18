@@ -1,7 +1,9 @@
-package JPALearning.Example1;
+package JPALearning.Example3;
 
 import JPALearning.Example1.Models.Bank;
 import JPALearning.Example1.Models.Client;
+import JPALearning.Example3.Models.Department;
+import JPALearning.Example3.Models.Employee;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -11,16 +13,17 @@ public class MainClass {
     public static void main(String[] args) {
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("org.hibernate.tutorial.jpa");
 
-        Client a=new Client();
-        a.setName("robi");
+        Department contabilitate = new Department();
+        contabilitate.setName("contabilitate");
 
-        Bank b=new Bank();
-        b.setName("Transilvania");
+        Employee robi=new Employee();
+        robi.setNume("robi");
+        robi.setDepartment(contabilitate);
 
         EntityManager entityManager = entityManagerFactory.createEntityManager();
         entityManager.getTransaction().begin();
-        entityManager.persist(a);
-        entityManager.persist(b);
+        entityManager.persist(contabilitate);
+        entityManager.persist(robi);
         entityManager.getTransaction().commit();
         entityManagerFactory.close();
     }
