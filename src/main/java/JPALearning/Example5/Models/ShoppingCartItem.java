@@ -11,7 +11,7 @@ public class ShoppingCartItem {
     @ManyToOne
     private ShoppingCart shoppingCart;
 
-    @OneToOne
+    @ManyToOne
     private Product product;
 
     public int getId() {
