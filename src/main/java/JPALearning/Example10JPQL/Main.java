@@ -20,6 +20,7 @@ public class Main {
         studentsToAdd.add(new Student("Kati",1));
         studentsToAdd.add(new Student("George",4));
         studentsToAdd.add(new Student("Madalina",2));
+        studentsToAdd.add(new Student("Madalina",2));
         studentsToAdd.add(new Student("Malina",2));
 
         List<Nota> noteToAdd = new ArrayList<>();
@@ -48,7 +49,13 @@ public class Main {
         List<Student> students = studentTypedQuery.getResultList();
         students.forEach(System.out::println);
 
+        TypedQuery<CustomQueryResult> customQuery = entityManager.createQuery("SELECT NEW JPALearning.Example10JPQL.CustomQueryResult(s.nume, COUNT(s.nume)) FROM Student s WHERE s.an=2 GROUP BY s.nume",CustomQueryResult.class);
+        List<CustomQueryResult> result = customQuery.getResultList();
+        result.forEach(System.out::println);
+
+
         entityManagerFactory.close();
 
     }
+
 }
