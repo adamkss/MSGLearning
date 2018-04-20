@@ -186,4 +186,88 @@
             <!--<property name="hibernate.cache.use_query_cache" value="true"/>-->
         </properties>
     </persistence-unit>
+    <persistence-unit name="example8">
+        <class>JPALearning.Example8Inheritance1.Models.Employee</class>
+        <class>JPALearning.Example8Inheritance1.Models.CompanyEmployee</class>
+        <class>JPALearning.Example8Inheritance1.Models.ContractEmployee</class>
+        <class>JPALearning.Example8Inheritance1.Models.FullTimeEmployee</class>
+        <class>JPALearning.Example8Inheritance1.Models.PartTimeEmployee</class>
+        <properties>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/learning?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"/>
+            <property name="hibernate.connection.autocommit" value="false"/>
+            <property name="hibernate.connection.username" value="root"/>
+            <property name="hibernate.connection.password" value="root"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
+            <property name="hibernate.connection.CharSet" value="utf8"/>
+            <property name="hibernate.connection.characterEncoding" value="utf8"/>
+            <property name="hibernate.connection.useUnicode" value="true"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+            <property name="hibernate.archive.autodetection" value=""/>
+            <!-- use encache provider-->
+            <!--<property name="hibernate.cache.region.factory_class"-->
+            <!--value="org.hibernate.cache.ehcache.EhCacheRegionFactory"/>-->
+            <!--<property name="hibernate.javax.cache.provider" value="org.ehcache.jsr107.EhcacheCachingProvider"/>-->
+            <!--&lt;!&ndash;use second level cache&ndash;&gt;-->
+            <!--<property name="hibernate.cache.use_second_level_cache" value="true"/>-->
+            <!--&lt;!&ndash;use 3rd level cache&ndash;&gt;-->
+            <!--<property name="hibernate.cache.use_query_cache" value="true"/>-->
+        </properties>
+    </persistence-unit>
+    <persistence-unit name="example9">
+        <class>JPALearning.Example9Inheritance2.Models.Employee</class>
+        <class>JPALearning.Example9Inheritance2.Models.CompanyEmployee</class>
+        <class>JPALearning.Example9Inheritance2.Models.ContractEmployee</class>
+        <class>JPALearning.Example9Inheritance2.Models.FullTimeEmployee</class>
+        <class>JPALearning.Example9Inheritance2.Models.PartTimeEmployee</class>
+        <properties>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/learning?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"/>
+            <property name="hibernate.connection.autocommit" value="false"/>
+            <property name="hibernate.connection.username" value="root"/>
+            <property name="hibernate.connection.password" value="root"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
+            <property name="hibernate.connection.CharSet" value="utf8"/>
+            <property name="hibernate.connection.characterEncoding" value="utf8"/>
+            <property name="hibernate.connection.useUnicode" value="true"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <property name="hibernate.archive.autodetection" value=""/>
+            <!-- use encache provider-->
+            <!--<property name="hibernate.cache.region.factory_class"-->
+            <!--value="org.hibernate.cache.ehcache.EhCacheRegionFactory"/>-->
+            <!--<property name="hibernate.javax.cache.provider" value="org.ehcache.jsr107.EhcacheCachingProvider"/>-->
+            <!--&lt;!&ndash;use second level cache&ndash;&gt;-->
+            <!--<property name="hibernate.cache.use_second_level_cache" value="true"/>-->
+            <!--&lt;!&ndash;use 3rd level cache&ndash;&gt;-->
+            <!--<property name="hibernate.cache.use_query_cache" value="true"/>-->
+        </properties>
+    </persistence-unit>
+    <persistence-unit name="example10">
+        <class>JPALearning.Example10JPQL.Models.Student</class>
+        <class>JPALearning.Example10JPQL.Models.Nota</class>
+        <properties>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/learning?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"/>
+            <property name="hibernate.connection.autocommit" value="false"/>
+            <property name="hibernate.connection.username" value="root"/>
+            <property name="hibernate.connection.password" value="root"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
+            <property name="hibernate.connection.CharSet" value="utf8"/>
+            <property name="hibernate.connection.characterEncoding" value="utf8"/>
+            <property name="hibernate.connection.useUnicode" value="true"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <property name="hibernate.archive.autodetection" value=""/>
+            <!-- use encache provider-->
+            <!--<property name="hibernate.cache.region.factory_class"-->
+            <!--value="org.hibernate.cache.ehcache.EhCacheRegionFactory"/>-->
+            <!--<property name="hibernate.javax.cache.provider" value="org.ehcache.jsr107.EhcacheCachingProvider"/>-->
+            <!--&lt;!&ndash;use second level cache&ndash;&gt;-->
+            <!--<property name="hibernate.cache.use_second_level_cache" value="true"/>-->
+            <!--&lt;!&ndash;use 3rd level cache&ndash;&gt;-->
+            <!--<property name="hibernate.cache.use_query_cache" value="true"/>-->
+        </properties>
+    </persistence-unit>
 </persistence>
